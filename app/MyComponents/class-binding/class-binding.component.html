@@ -1,0 +1,13 @@
+<!-- if you want to bind multiple css class dynamically 
+at that time use class-binding -->
+
+
+<h2 [class]="myCssClass" >Apply class Binding </h2>
+
+<h2 [class.danger]="num<5" 
+    [class.warning]="num>4"
+> class Binding </h2>
+
+<div>
+  <h3 [ngClass]="jsonObj">This is class binding</h3>
+</div>

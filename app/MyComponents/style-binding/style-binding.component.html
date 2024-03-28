@@ -1,0 +1,33 @@
+<!-- if you want to style any html tag or component dynamically 
+at that time we use style bindig 
+
+         [style.csspropertyname]="PropertyName"
+-->
+
+<h3 [style.color]="rating>5?myColor1:myColor2">This is Style Binding</h3>
+
+<div>
+  <marquee [style.background-color]="bgColor">
+    <h3 [style.color]="myColor2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos numquam
+      voluptatum sequi nam in corporis tempora, exercitationem minus beatae
+      nobis!
+    </h3>
+  </marquee>
+</div>
+
+<!-- you can also apply multiple css by using only style also -->
+<h4 [style]="myStyle">[style]="myStyle"</h4>
+
+
+
+<!-- ngStyle 
+    - It is attribute Directive 
+    - To apply Multiple Css Property to html element 
+    - To set the property we use json Object 
+    - [ngStyle]="JsonObject"
+    - U can apply any Html tag 
+-->
+
+
+<h2 [ngStyle]="JsonObject">[ngStyle]="JsonObject"</h2>
