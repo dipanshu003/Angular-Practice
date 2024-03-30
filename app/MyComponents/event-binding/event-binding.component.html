@@ -1,0 +1,19 @@
+<p>event-binding works!</p>
+
+<div>
+    <button (click) = "onCalling()">Call</button>
+</div>
+
+<div>
+    <img src="../../assets/dip_img.jpeg" title="Click on this image" alt="error" (click) = "onImage()">
+</div>
+
+
+<!-- $event 
+    - It is special variable given by angular 
+    - It gives current DOM Element information of that particular element 
+    - We can only access the data/information but we can not change that data 
+-->
+<div>
+    <button (click) = "onEvent($event)" value="Doller Event Calling... ">$event</button>
+</div>
